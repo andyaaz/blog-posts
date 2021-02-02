@@ -1,16 +1,9 @@
-import { NextSeo } from "next-seo";
-const seo = {
-  title: "Create your first sharable eslint config",
-  description:
-    "Tired of setting up config file every single time you create a new project?",
-};
-export const meta = {
-  ...seo,
-  slug: "reusable-linter-config",
-  date: new Date("2020-08-23"),
-};
-
-<NextSeo {...seo} />
+---
+title: "Create your first sharable eslint config"
+description: "Tired of setting up config file every single time you create a new project?"
+slug: "reusable-linter-config"
+date: "2020-08-23"
+---
 
 ## Problem
 
@@ -104,4 +97,3 @@ extends: ['@my-npm-username/eslint-config/some-config']
 [Eslint](https://eslint.org/docs/developer-guide/shareable-configs) has a more comprehensive guide on this if you are interested in a more comprehensive version of this.
 
 Also read more on publishing scoped npm package [here](https://docs.npmjs.com/creating-and-publishing-scoped-public-packages)
-
