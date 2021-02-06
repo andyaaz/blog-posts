@@ -3,6 +3,7 @@ title: "Create your first sharable eslint config"
 description: "Tired of setting up config file every single time you create a new project?"
 slug: "reusable-linter-config"
 date: "2020-08-23"
+tags: ["how-to", "npm", "eslint"]
 ---
 
 ## Problem
