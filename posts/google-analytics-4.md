@@ -2,7 +2,7 @@
 title: "Track your site with Google Tag manager and Google Analytics"
 description: "How to track your site with Google Tag manager and Google Analytics 4 Tags"
 slug: "google-analytics-4"
-date: "2021-02-01"
+createdAt: "2021-02-01"
 tags: ["google-tag-manager", "google-analytics", "how-to"]
 ---
 

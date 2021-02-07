@@ -2,7 +2,7 @@
 title: "Developer blog engine loop"
 description: "Ever wonder why it is hard for developers to publish blog posts?"
 slug: "developer-blog-engine-loop"
-date: "2021-02-03"
+createdAt: "2021-02-03"
 tags: ["dev life", "react", "gatsbyjs", "nextjs"]
 ---
 

@@ -2,7 +2,7 @@
 title: "Hello, world!"
 description: "Who the hell are you, anyway?"
 slug: "me"
-date: "2021-02-07"
+createdAt: "2021-02-07"
 tags: ["bio"]
 ---
 
