@@ -1,6 +1,6 @@
 ---
 title: "Hello, world!"
-description: "Who the hell are you, anyway?"
+description: "Some background information about myself"
 slug: "me"
 createdAt: "2021-02-07"
 tags: ["bio"]

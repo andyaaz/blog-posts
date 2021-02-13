@@ -1,7 +1,7 @@
 ---
-title: "AWS Five Pillars Cheatsheet Part 1"
+title: "AWS Five Pillars Cheatsheet"
 description: "Learning notes of AWS five pillars"
-slug: "aws-five-pillars-cheatsheet-part-1"
+slug: "aws-five-pillars-cheatsheet"
 createdAt: "2021-02-13"
 tags: ["aws"]
 ---
@@ -25,7 +25,7 @@ I am preparing for my AWS solution architect exam and here are some refreshers I
   - Glacier (pretty much S3, but for archives)
     - often used with life cycle policy with s3
     - highly durable (11 9s)
-    - access: bulk(cheap 12hrs), expedited(more expensive, 5 mins)
+    - access: bulk(cheap 12hrs), standard(3-5 hrs), expedited(more expensive, 5 mins)
   - Lambda
     - stateless code with managed compute units (without EC2 and auto scaling groups)
 
@@ -97,3 +97,63 @@ I am preparing for my AWS solution architect exam and here are some refreshers I
   - IAM over key + password
   - monitoring metrics
   - automate responses to metrics (and provide alerts for unusual events)
+
+## Secure Architectures
+
+- services:
+
+  - identidy management
+    - AWS IAM
+    - AWS Organization
+    - AWS cognito
+      - user pool -> get JWT (for web servers, api gateway)
+      - identity pool -> get access key and secret (for things like dynamoDB or s3)
+    - AWS SSO
+    - AWS Directory Service (AWS managed Microsoft Active Directory)
+  - Compute/Network
+    - VPC
+      - security groups
+      - Network ACL
+    - route tables
+    - transit gateway
+    - internet gateway
+  - data
+    - access and upload (SSH, HTTPS)
+    - S3 encryption
+
+- key ideas:
+
+  - shared responsibility model (know what you or aws is responsible for)
+  - least privilege (only grant privileges needed)
+    - IAM <- role <- permission (in form of policies)
+  - identities
+    - IAM
+    - roles
+    - Federation: users with corporate credentials(could be Microsoft Active Directory) that have role assigned in IAM
+    - Web identity Federation: users with web identities in form of Open ID provider that have role assgined using Security Token Service (STS)
+
+- axioms for the test:
+  - Lock down root user
+  - security group only allow and stateful. Network ACLs allow and deny
+  - Prefer IAM roles to access keys
+
+## Cost optimized
+
+- key ideas:
+
+  - pay as you go
+  - pay less when you reserve (vs on-demand)
+  - pay less when you use more
+
+- things you pay for:
+
+  - storage
+  - compute
+  - data transfer
+
+- services:
+  - EC2
+  - EBS
+  - S3
+  - serverless architectures
+  - CloudFront(so that data can be cached and no data transfer from client to s3)
