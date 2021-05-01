@@ -7,6 +7,7 @@ tags: ["cloud-computing"]
 ---
 
 Cloud Computing
+
 - on-demand self-service (all in console, no human needed)
 - board network access (internet access)
 - resource pool (more people share pool of resources, better value)
@@ -14,13 +15,14 @@ Cloud Computing
 - measured service (pay as you go)
 
 Types
+
 - public cloud
 - private cloud (e.g. aws outputs, azure stack, gcp anthos)
 - hybrid cloud (public and private)
 - multi cloud (multiple cloud vendors)
 
-services 
+services
+
 - IAAS (you consume OS)
 - PAAS (you consume run time)
 - SAAS (you consume app)
-

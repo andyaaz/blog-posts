@@ -7,6 +7,7 @@ tags: ["aws"]
 ---
 
 Things to remember
+
 - create root accounts for different env (PROD, DEV, STAGING)
 - create admin IAM accout(s) for each env
 - send monthly report to email
@@ -19,6 +20,6 @@ Things to remember
 - add addtional billing contacts
 
 Tricks
+
 - generate multiple email address with gmail "+" trick (format: gmail-address-prefix+whatever@gmail.com)
 - set a custom IAM login url
-

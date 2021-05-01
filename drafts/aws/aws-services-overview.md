@@ -7,6 +7,7 @@ tags: ["aws"]
 ---
 
 Five pillars references:
+
 - P (1)
 - R
 - O
@@ -15,7 +16,7 @@ Five pillars references:
 
 ## S3 and Glacier(R)
 
-- designed for 11 9s durability 
+- designed for 11 9s durability
 - Replica in multiple AZs cross-region (DR) >= 3
 - Life cycle policies
   - e.g. standard -> standard IA -> Glacier -> delete
@@ -23,7 +24,7 @@ Five pillars references:
 - Encrytion: SSE-S3, SSE-KMS, SSE-C
 
 |                                 | standard     | standard IA    | Glacier        |
-|---------------------------------|--------------|----------------|----------------|
+| ------------------------------- | ------------ | -------------- | -------------- |
 | availability SLA                | 99.9         | 99             | 99.9           |
 | resilience                      | cross region | same           | same           |
 | availability                    | 4 9s         | 3 9s           | x              |
@@ -41,7 +42,8 @@ Five pillars references:
 ## CloudFront (P)
 
 P
-- read from S3 
+
+- read from S3
 - upload to S3 with backbone network instead of public internet
 
 ## EC2
@@ -71,10 +73,11 @@ P
 - automatic replacing compute instance in the event of hardware failure
 
 - push-button scale up or down(up to 32 vCPUs and 244GiB RAM)
-- Aurora handles storage scaling 
+- Aurora handles storage scaling
 - read replica (mysql, mariadb, postgres, oracle and aurora)
 
-when to use: 
+when to use:
+
 - transactional data
 - complex query
 
@@ -85,13 +88,14 @@ when to use:
 - no need to choose size when setting up
 
 when to use:
-- simple read/write 
+
+- simple read/write
 - a single payload is less 4KB
 
-## Redshift 
+## Redshift
 
 - sql db
-when to use: 
+  when to use:
 - analystical data
 
 ## CloudFormation
@@ -99,14 +103,15 @@ when to use:
 ## ElastiCache (P)
 
 P
-- two options: 
+
+- two options:
 
 |                                                          | Memcached | Redis |
-|----------------------------------------------------------|-----------|-------|
+| -------------------------------------------------------- | --------- | ----- |
 | Multitreaded                                             | Y         | N     |
 | Advanced data structures                                 | N         | Y     |
 | Snopshots, replication, Pub/Sub, Lua, Geospatial support | N         | Y     |
-  
+
 [learn more](https://aws.amazon.com/elasticache/redis-vs-memcached/)
 
 ## Elastic File System (P)

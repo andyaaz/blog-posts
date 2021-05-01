@@ -7,11 +7,13 @@ tags: ["aws"]
 ---
 
 IAM functions
+
 - manage identities (create, delete users)
 - authenticate (email+password, access key+secret)
 - authorize (through policies)
 
 Components
+
 - users
   - when you know who will use it (most likely a human)
 - groups
@@ -19,6 +21,3 @@ Components
 - roles
   - when you don't know who will use it
   - used by whoever needs it
-
-
-

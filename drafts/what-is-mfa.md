@@ -9,10 +9,8 @@ tags: ["mfa"]
 Multi Factor Authentication
 
 factors:
+
 - knowledge (something you know)
 - possession (something you own)
 - location (where you are)
-...
-
-
-
+  ...
