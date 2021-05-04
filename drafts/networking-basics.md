@@ -23,7 +23,7 @@ OSI (Open Systems Interconnection model)
 
 5. Network layer (e.g. IP)
 
-- **why**: to uniquely identify devices in the world, give them IP addresses. a new frame will be created when packets are transferred from device to another device till it reaches the destined IP address.
+- **why**: to uniquely identify devices in the world, give them IP addresses. a new frame will be created when packets are transmitted from device to another device till it reaches the destined IP address.
 - **problem**: no way to enforce packets sequence and whether packets are delivered not not (if needed).
 - what is trahsferred: packet (wrapped in a frame)
 - example device: router (forwarding packets, unwrap frame and wrap packet in a new frame)
@@ -33,14 +33,14 @@ OSI (Open Systems Interconnection model)
 
 - **why**: to solve collision problem by adding source and destination MAC addresses to frame so that at most two devices send data at the exact same time can collide. also can detect if there's a carrier if one is sending data to another.
 - **problem**: works only for local network. can't communicate across the globe.
-- what is transferred: frame (in form of bits)
+- what is transmitted: frame (in form of bits)
 - example device: switch (smart hub with layer 2 capability)
 
 7. Physical layer
 
 - **why**: to transfer physical bits
 - **problem**: 1 on 1 is ok. For multiple devices, hub can only boardcast data to all connected devices thus increase chance of collision.
-- what is transferred: bit
+- what is transmitted: bit
 - example device: hub
 
 Subnetting
